@@ -11,33 +11,29 @@ const NetNavBar = function() {
     return (
       <Navbar expand="lg" className="bg-black">
         <Container fluid>
-          
-            <Navbar.Brand href="#">
-              <img
-                src={netflixLogo}
-                alt="NetFlixLogo"
-                style={{ height: "55px" }}
-              />
-            </Navbar.Brand>
+          <Link to='/' className='navbar-nav'>
+          <img src={netflixLogo} alt='logo' style={{ height:'55px'}} />
+          </Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
         
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home" className="text-white fw-bold">
+              <Link to="/home" className="text-white fw-bold">
                 Home
-              </Nav.Link>
-              <Nav.Link href="#" className="text-secondary fw-bold">
+              </Link>
+              <Link to="/"  className="text-secondary fw-bold">
                 TV Shows
-              </Nav.Link>
-              <Nav.Link href="#" className="text-secondary fw-bold">
+              </Link>
+              <Link to="/" className="text-secondary fw-bold">
                 Movies
-              </Nav.Link>
-              <Nav.Link href="#" className="text-secondary fw-bold">
+              </Link>
+              <Link to="/" className="text-secondary fw-bold">
                 Recently Added
-              </Nav.Link>
-              <Nav.Link href="#" className="text-secondary fw-bold">
+              </Link>
+              <Link to="/"  className="text-secondary fw-bold">
                 My List
-              </Nav.Link>
+              </Link>
             </Nav>
             <div className="me-2">
               <Icon.Search className="text-white mx-3" />
