@@ -1,11 +1,13 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import * as Icon from "react-bootstrap-icons";
-
+import {Link, useLocation } from 'react-router-dom';
 import netflixLogo from "../assets/logo.png";
-import { Component } from "react";
 
-class NetNavBar extends Component {
-  render() {
+const NetNavBar = function() {
+  const location = useLocation()
+  console.log('Localizza Obiettivo', location)
+
+
     return (
       <Navbar expand="lg" className="bg-black">
         <Container fluid>
@@ -50,6 +52,5 @@ class NetNavBar extends Component {
       </Navbar>
     );
   }
-}
 
 export default NetNavBar;
