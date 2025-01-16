@@ -1,9 +1,7 @@
-import { Component } from "react";
-
 import * as Icon from "react-bootstrap-icons";
 
-class NetFooter extends Component {
-  render() {
+const NetFooter = function() {
+
     return (
       <div className="bg-black d-flex justify-content-center pt-3">
         <div>
@@ -46,6 +44,6 @@ class NetFooter extends Component {
       </div>
     );
   }
-}
+
 
 export default NetFooter;

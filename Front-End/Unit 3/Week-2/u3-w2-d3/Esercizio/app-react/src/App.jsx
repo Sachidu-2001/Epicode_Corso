@@ -4,6 +4,8 @@ import NetFilms from "./Components/NetFilms";
 import NetNavBar from "./Components/NetNavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
+
+
 const App = function() {
   return (
     <BrowserRouter>

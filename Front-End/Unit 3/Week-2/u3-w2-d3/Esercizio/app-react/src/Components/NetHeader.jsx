@@ -1,10 +1,8 @@
-import { Component } from "react";
 import * as Icon from 'react-bootstrap-icons';
 
 import { Dropdown } from "react-bootstrap";
 
-class NetHeader extends Component {
-  render() {
+const NetHeader = function() {
     return (
       <div className="d-flex justify-content-between bg-black px-3 pb-3 ">
       <div className="d-flex">
@@ -29,6 +27,5 @@ class NetHeader extends Component {
       </div>
     );
   }
-}
 
 export default NetHeader;
