@@ -1,12 +1,15 @@
 import ButtonComponent from "./components/ButtonComponent";
+import ImageComponent from "./components/ImageComponent";
 
 function App() {
   return (
-    <>
-      <p>Vattene</p>
-      <ButtonComponent label='Click me if you are not Gay' />
+    <>    
+      <ButtonComponent label='i m crazy' />
+      <ImageComponent srcText='http://placecats.com/300/300' altText='cat playing mouse'/>
+      <ImageComponent srcText='http://placecats.com/600/300' altText='cat playing bog'/>
+ 
+      <ButtonComponent label='You are a Mad Bro' />
 
-      <ButtonComponent label ='Click if you are Chinese' />
     </>
   );
 }
