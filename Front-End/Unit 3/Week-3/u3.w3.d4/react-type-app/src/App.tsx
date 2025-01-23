@@ -1,13 +1,22 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ArticleList from './components/ArticleList';
+import NavbarComponent from './components/NavBar.tsx';
+import ArticleDetails from './components/ArticleDetails';
 
-
-function App() { 
+function App() {
   return (
     <>
-    <h1>bela</h1>
-    <p>Ciao</p>
-    <p>ciao</p>
+      <BrowserRouter>
+        <NavbarComponent />
+        <Routes>
+          <Route path='/' element={<ArticleList />} />
+          <Route path='/article/:id' element={<ArticleDetails />} />
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
