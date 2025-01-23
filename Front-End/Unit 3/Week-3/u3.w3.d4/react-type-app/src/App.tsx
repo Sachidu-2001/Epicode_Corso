@@ -1,11 +1,11 @@
-import { useState } from 'react'
 
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function App() { 
   return (
     <>
+    <h1>bela</h1>
+    <p>Ciao</p>
+    <p>ciao</p>
     </>
   )
 }
