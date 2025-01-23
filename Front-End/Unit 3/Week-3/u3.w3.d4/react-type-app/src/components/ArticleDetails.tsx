@@ -25,7 +25,7 @@ const ArticleDetails = () => {
   }, []);
 
   return (
-    <Col xs={12} md={6} lg={4}>
+    <Col xs={12} md={6} lg={4} className='g-3'>
       <Card style={{ height: '100%' }}>
         <Card.Img variant='top' src={article?.image_url} alt={article?.title} />
         <Card.Body>
