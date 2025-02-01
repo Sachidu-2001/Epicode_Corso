@@ -55,7 +55,42 @@ const Comparison = function (_firstName, _lastName,_age,_city, _address) {
     }
 }
 
+const result = new Comparison
+
+
+console.log(result.bigger()) // ricorda di richiamare una costante per ottenere il risulato//
+
 const girl1 = new Comparison('Valentina','Cornelio','15','Lacchiarella','Via Puccini 4')
 
 console.log(girl1.girl())
+
+
+//facciamo la stessa cosa usando un costruttore //
+
+console.log('Usando un costruttore')
+
+class Student{
+    constructor(_firstName,_lastName,_age,_city) {
+        this.firstName = _firstName
+        this.lastName = _lastName
+        this.age = _age
+        this.city = _city
+    }
+
+
+    whoIsBigger() {
+        if( person1.age > person2.age) {
+            return `${person1.firstName} ${person1.lastName} è più grande di ${person2.firstName} ${person2.lastName}`
+        } else {
+            return `${person1.firstName} ${person1.lastName} è più piccolo/a di ${person2.firstName} ${person2.lastName}`
+        }
+    }
+}
+
+const result2 = new Student
+
+console.log(result2.whoIsBigger())
+
+
+
 
