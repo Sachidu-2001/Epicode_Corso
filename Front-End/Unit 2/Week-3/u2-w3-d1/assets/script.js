@@ -92,5 +92,46 @@ const result2 = new Student
 console.log(result2.whoIsBigger())
 
 
+//esercizio 2//
+
+
+const petName= document.getElementById('petName')
+const ownerName= document.getElementById('ownerName')
+const species = document.getElementById('species')
+const breed = document.getElementById('breed')
+
+const btnAdd = document.getElementById('add')
+const list = document.getElementById('list')
+const pets = [];
+
+
+class Pet {
+    constructor(_petName, _ownerName, _species, _breed) {
+        this.petName = _petName
+        this.ownerName = _ownerName
+        this.species = _species
+        this.breed = _breed
+    }
+}
+
+
+btnAdd.addEventListener('click',function(e){
+    e.preventDefault();
+    printList()
+
+
+
+})
+
+
+function printList() {
+    pets.forEach(pet => {
+        let newLi = document.createElement('li')
+        newLi.innerText = `PetsName : ${pets.petName}, Owner: ${pets.ownerName} Specie : ${pets.species} Breed:${pets.breed}`
+        list.appendChild(newLi)
+    })
+}
+
+
 
 
