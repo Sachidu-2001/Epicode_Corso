@@ -16,3 +16,6 @@ class Pet {
     }
 }
 
+function addForm() {
+}
+
