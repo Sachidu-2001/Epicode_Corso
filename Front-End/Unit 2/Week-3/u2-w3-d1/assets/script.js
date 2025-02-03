@@ -117,6 +117,8 @@ class Pet {
 
 btnAdd.addEventListener('click',function(e){
     e.preventDefault();
+    const newPet = new Pet(petName.value, ownerName.value, species.value, breed.value)
+    pets.push(newPet)
     printList()
 
 
@@ -125,12 +127,18 @@ btnAdd.addEventListener('click',function(e){
 
 
 function printList() {
+    list.innerHTML = ''
     pets.forEach(pet => {
         let newLi = document.createElement('li')
-        newLi.innerText = `PetsName : ${pets.petName}, Owner: ${pets.ownerName} Specie : ${pets.species} Breed:${pets.breed}`
+        newLi.innerText = `PetsName : ${pet.petName}, Owner: ${pet.ownerName} Specie : ${pet.species} Breed:${pet.breed}`
         list.appendChild(newLi)
     })
+
+    const petsForm = document.getElementById('petsForm')
+petsForm.reset()
 }
+
+
 
 
 
