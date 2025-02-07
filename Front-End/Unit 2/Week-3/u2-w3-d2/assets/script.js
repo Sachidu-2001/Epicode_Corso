@@ -20,6 +20,7 @@ btnRemove.addEventListener("click", function (e) {
 
 function removeText() {
   localStorage.removeItem("name");
+  p.innerText = "Nome eliminato";
 }
 
 //Esercizio 2
