@@ -1,19 +1,32 @@
-const words = document.getElementById('paragraph')
-const btnSave = document.getElementById('save')
-const btnRemove = document.getElementById('remove')
-const input = document.getElementById('input')
+const p = document.getElementById("p");
+const btnSave = document.getElementById("save");
+const btnRemove = document.getElementById("remove");
+const input = document.getElementById("input");
 
-
-btnSave.addEventListener('click', function(e) {
-    e.preventDefault()
-    saveText()
-
-})
+btnSave.addEventListener("click", function (e) {
+  e.preventDefault();
+  saveText();
+});
 
 function saveText() {
-    let inputName = localStorage.setItem('name', `${input.value}`)
+  localStorage.setItem("name", input.value);
+  p.innerHTML = localStorage.getItem("name");
 }
 
-function printText() {
-    
+btnRemove.addEventListener("click", function (e) {
+  e.preventDefault();
+  removeText();
+});
+
+function removeText() {
+  localStorage.removeItem("name");
+}
+
+//Esercizio 2
+
+const interval = setInterval(time, 1000);
+const timer = document.getElementById("timer");
+
+function time() {
+  sessionStorage.setItem("timer", timer);
 }
