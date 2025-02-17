@@ -1,19 +1,75 @@
-/* IMPOSTAZIONI GENERALI */
-
-.backGround {
-    background-color: red;
+body {width:500px;
+    margin:0px
 }
 
-/* HEADER */
+#logo{width:35%;padding:2.5em}
 
-/* MAIN */
+#first{height:140px;
+text-align:center;
+background-color: black;}
 
-/* ELEMENTI NEL MAIN - ARTICLE */
+#image{background-image:url(banner\ 3110.jpg);
+background-size:cover;}
 
-/* TABELLE */
+section{text-align: center;}
 
-/* FORM */
+.title{color: #25a2c3;
+  font-family: "Montserrat", sans-serif;
+}
 
-/* ELEMENTI NELL' ASIDE */
+#content{font-size: 45px;
+padding-top: 1.5em
+;}
 
-/* FOOTER */
+.subtitle{color:#393d41;
+  font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+  line-height: 1.65;
+}
+
+button{
+    padding:4px 50px;
+background-color: #f04c2f;
+border-radius:10px;
+border-color:#f04c2f;}
+
+#actionbutton{font-size: 17px;
+color:white}
+
+#notebook{border-radius: 50%;}
+
+article{text-align: center;
+background-color: #e22d0e;}
+
+#redtitle{font-size:4em;}
+
+.articletitle{color:white;
+    font-family: "Montserrat", sans-serif;}
+
+#caption{color:white;
+}
+
+#text{color:white;
+font-size: 2em;}
+
+nav{text-align: center;}
+
+fieldset{width:430px;
+padding:0%;
+margin:auto;
+border-color: #dee1e3;}
+
+footer{text-align: center;
+background-color: #25a2c3;
+color: white;
+}
+
+#footertitle{font-size:50px;
+  font-family: "Montserrat", sans-serif;
+color: white;}
+
+hr{width:300px}
+
+footer p{font-size: 23px;
+  font-family: "Montserrat", sans-serif;
+line-height:10px;}
