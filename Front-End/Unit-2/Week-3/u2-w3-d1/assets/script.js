@@ -123,16 +123,16 @@ btnAdd.addEventListener("click", function (e) {
 
 function printList() {
   list.innerHTML = "";
-  if (petName.value != " " || petName.value != "" || petName.value != null) {
+  if (petName.value.trim() === "" && petName.value === null) {
+    let testo = document.createElement("p");
+    testo.innerText = "Manca il Nome dell'animale";
+    list.appendChild(testo);
+  } else {
     pets.forEach((pet) => {
       let newLi = document.createElement("li");
       newLi.innerText = `PetsName : ${pet.petName}, Owner: ${pet.ownerName} Specie : ${pet.species} Breed:${pet.breed}`;
       list.appendChild(newLi);
     });
-  } else {
-    let testo = document.createElement("p");
-    testo.innerText = "Manca il Nome dell'animale";
-    list.appendChild(testo);
   }
 
   const petsForm = document.getElementById("petsForm");
