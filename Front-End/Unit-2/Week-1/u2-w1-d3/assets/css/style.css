@@ -1,0 +1,37 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#logoAndStart img {
+    width: 50px;
+}
+
+#logoAndStart {
+    font-size: 2.3em;
+}
+
+
+#navi {
+   background-color:#FEF7E2;
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+   
+
+
+}
+
+#buttons {
+    display: flex;
+       
+}
+
+.btn {
+    border: 1px solid #FFDF7E;
+    background-color: #FFDF7E;
+    font-weight: bold;
+    color:#742305;
+    width: 4em;
+
+}
