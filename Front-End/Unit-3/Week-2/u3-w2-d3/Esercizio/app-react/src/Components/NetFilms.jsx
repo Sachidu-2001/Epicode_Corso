@@ -5,13 +5,13 @@ import { Row, Col } from "react-bootstrap";
 const NetFilms = () => {
   const [movies1, setMovies1] = useState([]);
   const [movies2, setMovies2] = useState([]);
-  const [movies3, setMovies3] = useState([]);  
+  const [movies3, setMovies3] = useState([]);
 
   useEffect(() => {
     const fetchMovie1 = async () => {
       try {
         const response = await fetch(
-          "https://www.omdbapi.com/?apikey=a69bf1d9&s=South%20Park"
+          "https://www.omdbapi.com/?apikey=a69bf1d9&s=x-factor"
         );
         const data = await response.json();
         setMovies1(data.Search ? data.Search.slice(0, 6) : []);
@@ -47,9 +47,7 @@ const NetFilms = () => {
     fetchMovie1();
     fetchMovie2();
     fetchMovie3();
-
   });
-
 
   return (
     <div className="py-2 px-3 bg-black">
@@ -65,7 +63,13 @@ const NetFilms = () => {
               className="text-center"
             >
               <div className="card-container">
-                <img src={movie.Poster !== "N/A" ? movie.Poster : "default-image.jpg"}alt={movie.Title} style={{height:'150px',width:'250px'}} />
+                <img
+                  src={
+                    movie.Poster !== "N/A" ? movie.Poster : "default-image.jpg"
+                  }
+                  alt={movie.Title}
+                  style={{ height: "150px", width: "250px" }}
+                />
               </div>
             </Col>
           ))}
@@ -83,7 +87,13 @@ const NetFilms = () => {
               className="text-center"
             >
               <div className="card-container">
-                <img src={movie.Poster !== "N/A" ? movie.Poster : "default-image.jpg"}alt={movie.Title} style={{height:'150px',width:'250px'}} />
+                <img
+                  src={
+                    movie.Poster !== "N/A" ? movie.Poster : "default-image.jpg"
+                  }
+                  alt={movie.Title}
+                  style={{ height: "150px", width: "250px" }}
+                />
               </div>
             </Col>
           ))}
@@ -101,13 +111,18 @@ const NetFilms = () => {
               className="text-center"
             >
               <div className="card-container">
-                <img src={movie.Poster !== "N/A" ? movie.Poster : "default-image.jpg"}alt={movie.Title} style={{height:'150px',width:'250px'}} />
+                <img
+                  src={
+                    movie.Poster !== "N/A" ? movie.Poster : "default-image.jpg"
+                  }
+                  alt={movie.Title}
+                  style={{ height: "150px", width: "250px" }}
+                />
               </div>
             </Col>
           ))}
         </Row>
       </div>
-      
     </div>
   );
 };
